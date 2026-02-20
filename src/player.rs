@@ -125,7 +125,7 @@ fn animate_player(
     if current_row != target_row {
         atlas.index = row_start_index(anim.facing);
         current_col = 0;
-        // DNE IN FINAL REPO, RECOMMEND CHANGE current_row = target_row;
+        current_row = target_row;
         timer.reset();
     }
 
